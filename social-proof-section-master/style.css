@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    padding: 10px;
+}
+body{
+    background-image: 
+    url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 400px, 100%;
+    
+    font-family: 'League Spartan', 'Open Sans', sans-serif;
+}
+
+.container{
+    height: 100vh;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content h1{
+ color: hsl(300, 43%, 22%);
+}
+
+.content{
+    width: 50%;
+}
+
+.review-section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.rating{
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 10px ;
+    padding: 10px 25px;
+    border-radius: 5px ;
+    text-align: center;
+}
+.rating-1{
+    align-self: flex-start;
+    
+}
+.rating-2{
+    align-self: center;
+}
+.rating-3{
+    align-self: flex-end;
+}
+
+.buyer-name{
+ color: hsl(0, 0%, 100%);
+}
+
+.buyer-comment{
+    color: hsl(0, 0%, 100%);
+    text-align: justify;
+    
+}
+
+.buyer-status{
+    color: hsl(333, 80%, 67%);
+}
+
+
+/* .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+} */
+
+.flex-box{
+    display: flex;
+}
+
+.item img{
+    border-radius: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+.item{
+    background-color: hsl(300, 43%, 22%);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.grid-item1{
+    align-self: flex-start;
+}
+.grid-item2{
+   align-self: center;
+}
+.grid-item3{
+    align-self: flex-end;
+}
+
