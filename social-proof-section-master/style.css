@@ -1,130 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
 *{
     box-sizing: border-box;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-image: 
     url(./images/bg-pattern-top-desktop.svg),
     url(./images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat;
-    background-size: 400px, 100%;
-    
+    background-position:  left top,right bottom;
     font-family: 'League Spartan', 'Open Sans', sans-serif;
 }
 
 .container{
-    height: 100vh;
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
 }
 
-.flex-container{
-    display: flex;
-    justify-content: space-between;
+.main-grid{
+    display: grid;
+    grid-template-rows: repeat(2, 300px);
+    place-items: center;
+}
+
+.grid-container-top{
+    display: grid;
+    grid-template-columns: 300px 400px;
+    column-gap: 140px;
+    margin-top: 2rem;
 }
 
 .content h1{
- color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 1rem;
 }
 
 .content p{
-    color: hsl(300, 24%, 96%);
+    color: hsl(303, 10%, 53%);
+    margin-bottom: 1rem;
 }
 
-.content{
-    width: 50%;
-}
-
-.review-section{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    color: hsl(300, 43%, 22%);
-}
 .rating{
+    display: flex;
     background-color: hsl(300, 24%, 96%);
-    margin-bottom: 10px ;
-    padding: 10px 25px;
-    border-radius: 5px ;
-    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    justify-content: left;
+    align-items: center;
+    position: relative;
 }
-.rating-1{
-    align-self: flex-start;
-    
-}
+
 .rating-2{
-    align-self: center;
+    left: 2rem;
 }
+
 .rating-3{
-    align-self: flex-end;
+    left: 4rem;
 }
 
-.buyer-name{
- color: hsl(0, 0%, 100%);
+.rating p{
+    margin-left: 10px;
+    color: hsl(300, 43%, 22%);
+    font-size: 0.8rem;
+    font-weight: 700;
 }
 
-.buyer-comment{
-    color: hsl(0, 0%, 100%);
-    text-align: justify;
-    
+.box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 20px;
+}
+
+.box>div{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.image{
+    border-radius: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+.buyer-name, .buyer-comment{
+    color: hsl(300, 24%, 96%);
+    padding: 5px;
 }
 
 .buyer-status{
     color: hsl(333, 80%, 67%);
+    
+}
+.buyer-comment{
+    text-align: justify;
+    padding-top: 20px;
 }
 
-
-/* .grid-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-} */
-
-.flex-box{
-    display: flex;
-}
-
-.item img{
-    border-radius: 50px;
-    float: left;
-    margin-right: 20px;
-}
-
-.item{
-    background-color: hsl(300, 43%, 22%);
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
-    justify-content: space-between;
-}
-
-.grid-item1{
-    align-self: flex-start;
-}
 .grid-item2{
-   align-self: center;
+    top: 2rem;
 }
+
 .grid-item3{
-    align-self: flex-end;
-}
-
-@media(max-width: 500px){
-
-    .body{
-        background-image: url(./images/bg-pattern-bottom-mobile.svg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        padding: 0;
-        margin: 0;
-    }
-
-    .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        
-    }
-
-
-
-
+    top: 4rem;
 }
