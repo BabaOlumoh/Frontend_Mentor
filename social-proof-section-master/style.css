@@ -25,6 +25,10 @@ body{
  color: hsl(300, 43%, 22%);
 }
 
+.content p{
+    color: hsl(300, 24%, 96%);
+}
+
 .content{
     width: 50%;
 }
@@ -33,6 +37,7 @@ body{
     width: 50%;
     display: flex;
     justify-content: center;
+    color: hsl(300, 43%, 22%);
 }
 .rating{
     background-color: hsl(300, 24%, 96%);
@@ -101,3 +106,25 @@ body{
     align-self: flex-end;
 }
 
+@media(max-width: 500px){
+
+    .body{
+        background-image: url(./images/bg-pattern-bottom-mobile.svg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+
+
+
+}
